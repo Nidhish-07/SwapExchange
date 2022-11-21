@@ -26,7 +26,7 @@ const Header = (props: Props) => {
       </ul>
       <div className="flex relative ">
         {toggleMenu?<ImCross fontSize={28} className="text-white md:hidden cursor-pointer"  onClick={()=>setToggleMenu(false)}/>:<GiHamburgerMenu fontSize={28} className="text-white md:hidden cursor-pointer"  onClick={()=>setToggleMenu(true)}/>}
-        {toggleMenu&&(<ul className="z-10 fixed top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none flex flex-col justify-start items-end bg-blue-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 text-black animate-slide-in">
+        {toggleMenu&&(<ul className="z-10 fixed top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none flex flex-col justify-start items-end bg-blue-300 rounded-md bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20 border border-gray-100 text-black animate-slide-in">
           <li className="text-xl w-full my-2">
             <ImCross onClick={()=>setToggleMenu(false)}></ImCross>
             {["Market","Exchange","Wallets"].map((titleName,index)=>(<HeaderTitle title={titleName} classProps="my-2 text-lg" key={index+titleName} />))}
