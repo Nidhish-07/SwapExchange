@@ -11,7 +11,7 @@ type Props = {};
 const App = (props: Props) => {
   return (
     <div className="min-h-screen">
-      <div className="">
+      <div className="bg-gradient-to-r from-gray-400 via-gray-600 to-blue-800">
         <Header />
         <Home />
       </div>
